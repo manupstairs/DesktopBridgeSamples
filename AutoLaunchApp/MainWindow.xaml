@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:AutoLaunchApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <StackPanel>
+        
         <TextBlock>AutoLaunch</TextBlock>
-    </Grid>
+        <CheckBox IsChecked="{Binding IsChecked,Mode=TwoWay}"></CheckBox>
+        <TextBlock Text="{Binding State}"></TextBlock>
+    </StackPanel>
 </Window>
